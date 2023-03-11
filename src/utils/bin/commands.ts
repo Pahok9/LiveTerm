@@ -44,13 +44,13 @@ export const resume = async (args: string[]): Promise<string> => {
 };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+// export const donate = async (args: string[]): Promise<string> => {
+//   return `thank you for your interest. 
+// here are the ways you can support my work:
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+// - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+// `;
+// };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -141,14 +141,17 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+  888888b.                              888888b.                              
+  888  "88b                             888  "88b                             
+  888  .88P                             888  .88P                             
+  8888888K.   8888b.  88888b.   .d88b.  8888888K.   8888b.  88888b.   .d88b.  
+  888  "Y88b     "88b 888 "88b d88P"88b 888  "Y88b     "88b 888 "88b d88P"88b 
+  888    888 .d888888 888  888 888  888 888    888 .d888888 888  888 888  888 
+  888   d88P 888  888 888  888 Y88b 888 888   d88P 888  888 888  888 Y88b 888 
+  8888888P"  "Y888888 888  888  "Y88888 8888888P"  "Y888888 888  888  "Y88888 
+                                    888                                   888 
+                               Y8b d88P                              Y8b d88P 
+                                "Y88P"                                "Y88P"  
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
